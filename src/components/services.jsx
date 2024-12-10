@@ -3,9 +3,9 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 export default function Services() {
   return (
-    <div className="container md:px-28 mt-20">
+    <div className="container md:px-28 mt-24">
       <div className="flex flex-row gap-6 items-center">
-        <h2 className="bg-neonGreen font-bold p-1 text-xl rounded-lg">
+        <h2 className="bg-neonGreen w-[15%] font-bold p-1 text-3xl rounded-lg">
           Services
         </h2>
         <p className="w-[490px] text-base leading-4">
@@ -229,6 +229,7 @@ export default function Services() {
             </span>
           </div>
         </div>
+        
       </div>
     </div>
   );
