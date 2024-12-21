@@ -3,6 +3,8 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
 import Process from "@/components/process";
+import Testimonials from "@/components/testimonials";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -19,6 +21,12 @@ export default function Home() {
       <section className="">
         <Process />
       </section>
+      <section className="">
+        <Testimonials />
+      </section>
+      <section className="">
+        <Footer />
+        </section>
     </div>
   );
 }
