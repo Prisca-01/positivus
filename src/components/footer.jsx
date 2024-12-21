@@ -1,10 +1,53 @@
-
-
+import Image from "next/image";
+import Link from "next/link";
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
-    return(
-        <div className="container md:px-28 mt-32">
-            
+  return (
+    <div className="container md:px-28 mt-32">
+      <div className="bg-black p-6 rounded-t-3xl">
+        <div className="flex flex-row items-center gap-40">
+          <div>
+            <Image src="/Logo.svg" alt="logo" width={130} height={70} />
+          </div>
+          <div className="flex flex-row underline space-x-8 items-center text-white">
+            <nav>
+              <Link href="#">About us</Link>
+            </nav>
+            <nav>
+              <Link href="#">Services</Link>
+            </nav>
+            <nav>
+              <Link href="#">Use Cases</Link>
+            </nav>
+            <nav>
+              <Link href="#">Pricing</Link>
+            </nav>
+            <nav>
+              <Link href="#">Blog</Link>
+            </nav>
+          </div>
+          <div className="flex flex-row gap-4">
+            <FaLinkedinIn className="text-black bg-white p-2 w-8 h-8 rounded-full text-center" />
+            <FaFacebookF className="text-black bg-white p-2 w-8 h-8 rounded-full text-center" />
+            <FaTwitter className="text-black bg-white p-2 w-8 h-8 rounded-full text-center" />
+          </div>
         </div>
-    );
+        <div className="flex flex-col mt-12">
+        <div className="flex flex-col gap-4">
+          <p className="bg-neonGreen w-32 px-2 py-1 text-lg font-bold rounded-lg">
+            Contact us:
+          </p>
+          <span className="text-white">Email: info@positivus.com</span>
+          <span className="text-white">Phone: 555-567-8901</span>
+          <span className="text-white">
+            Address: 1234 Main St
+          </span>
+          <span className="text-white -mt-4">Moonstone City, Stardust State 12345</span>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  );
 }
