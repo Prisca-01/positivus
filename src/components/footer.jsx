@@ -33,20 +33,33 @@ export default function Footer() {
             <FaTwitter className="text-black bg-white p-2 w-8 h-8 rounded-full text-center" />
           </div>
         </div>
-        <div className="flex flex-col mt-12">
-        <div className="flex flex-col gap-4">
-          <p className="bg-neonGreen w-32 px-2 py-1 text-lg font-bold rounded-lg">
-            Contact us:
-          </p>
-          <span className="text-white">Email: info@positivus.com</span>
-          <span className="text-white">Phone: 555-567-8901</span>
-          <span className="text-white">
-            Address: 1234 Main St
-          </span>
-          <span className="text-white -mt-4">Moonstone City, Stardust State 12345</span>
+        <div className="flex gap-36 items-center mt-12">
+          {/* Contact Info Section */}
+          <div className="flex flex-col gap-4">
+            <p className="bg-neonGreen w-32 px-2 py-1 text-lg font-bold rounded-lg">
+              Contact us:
+            </p>
+            <span className="text-white">Email: info@positivus.com</span>
+            <span className="text-white">Phone: 555-567-8901</span>
+            <span className="text-white">Address: 1234 Main St</span>
+            <span className="text-white -mt-4">
+              Moonstone City, Stardust State 12345
+            </span>
+          </div>
+
+          {/* Buttons Section */}
+          <div className="flex flex-row justify-center items-center gap-4 h-40 bg-charcoalBlack w-[570px] rounded-3xl p-4">
+            <button className="text-white text-left border-white border-2 rounded-lg w-[220px] px-4 py-2">
+              Email
+            </button>
+            <button className="text-black bg-neonGreen rounded-lg w-[220px] py-2">
+              Subscribe to news
+            </button>
+          </div>
         </div>
-        </div>
-        
+        <div className="border-white border-2 mt-16"></div>
+        <p className="text-white mt-12">© 2023 Positivus. All Rights Reserved. <span>              <Link href="#" className="ml-9 underline">Privacy Policy</Link>
+        </span></p>
       </div>
     </div>
   );
