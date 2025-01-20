@@ -54,16 +54,16 @@ export default function Process() {
 
   return (
     <div className="container md:px-28 mt-24">
-      <div className="flex flex-row gap-6 items-center">
-        <h2 className="bg-neonGreen w-[30%] font-bold p-1 text-2xl rounded-lg">
+      <div className="flex flex-col md:flex-rowgap-6 items-center">
+        <h2 className="bg-neonGreen w-[30%] font-bold p-1 text-2xl rounded-lg hidden md-visible">
           Our Working Process
         </h2>
-        <p className="w-[250px] text-base leading-4">
+        <p className="w-[250px] text-base leading-4 text-center">
           Step-by-step guide to achieving your business goals.
         </p>
       </div>
 
-      <div className="w-full flex flex-col mt-12 gap-6">
+      <div className="w-full flex flex-col mt-12 gap-6 px-4">
         {processSteps.map(({ id, title, details }) => (
           <div
             key={id}
@@ -103,16 +103,16 @@ export default function Process() {
 
       {/* Team */}
       <div className="mt-24">
-        <div className="flex flex-row gap-6 items-center">
+        <div className="flex flex-col md:flex-row gap-6 items-center">
           <h2 className="bg-neonGreen font-bold px-2 py-1 text-2xl rounded-lg">
             Team
           </h2>
-          <p className="w-[450px] text-base leading-4">
+          <p className="w-[450px] text-base leading-4 text-center">
             Meet the skilled and experienced team behind our successful digital
             marketing strategies{" "}
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-8 mt-12">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-8 mt-12 px-4">
           <div className="bg-white p-6 border-black border-2 border-b-4 rounded-3xl relative">
             <Image
               src="/linkedin.svg"
@@ -301,8 +301,8 @@ export default function Process() {
           </div>
         </div>
       </div>
-      <div className="flex justify-end">
-        <button className="bg-black mt-8 text-white px-3 w-[200px] py-3 rounded-lg hover:bg-gray-800">
+      <div className="flex lg:justify-end justify-center">
+        <button className="bg-black mt-8 text-white px-3 w-[350px] lg:w-[200px] py-3 rounded-lg hover:bg-gray-800">
           See all Team
         </button>
       </div>

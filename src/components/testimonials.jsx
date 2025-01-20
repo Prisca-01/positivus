@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Testimonials() {
   return (
     <div className="container md:px-28 mt-32">
-      <div className="flex flex-row gap-6 items-center">
+      <div className="flex flex-col md:flex-row gap-6 items-center">
         <h2 className="bg-neonGreen w-[15%] font-bold p-1 text-2xl rounded-lg">
           Testimonials
         </h2>
@@ -61,15 +61,15 @@ export default function Testimonials() {
 
       {/* Contact Us */}
       <div className="mt-32">
-        <div className="flex flex-row gap-6 items-center">
+        <div className="flex flex-col md:flex-row gap-6 items-center">
           <h2 className="bg-neonGreen w-[15%] font-bold p-1 text-2xl rounded-lg">
             Contact Us
           </h2>
-          <p className="w-[290px] text-base leading-4">
+          <p className="w-[290px] text-base leading-4 text-center">
             Connect with Us: Let&apos;s Discuss Your Digital Marketing Needs
           </p>
         </div>
-        <div className="flex justify-between items-center bg-slate-100 rounded-3xl mt-12 pl-10 py-10">
+        <div className="flex justify-between items-center bg-slate-100 rounded-3xl mt-12 pl-10 py-10 px-4 md-px-0">
           <div className="form">
             <form action="submit">
               <div className="flex gap-2">
@@ -113,7 +113,7 @@ export default function Testimonials() {
             </form>
           </div>
           {/* <div> */}
-            <Image src="/contact.svg" alt="contact" className="absolute -right-28" width={500} height={900} />
+            <Image src="/contact.svg" alt="contact" className="absolute -right-28 hidden lg:block " width={500} height={900} />
           {/* </div> */}
         </div>
       </div>

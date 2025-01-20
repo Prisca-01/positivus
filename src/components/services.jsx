@@ -4,16 +4,16 @@ import { BsArrowUpRight } from "react-icons/bs";
 export default function Services() {
   return (
     <div className="container md:px-28 mt-24">
-      <div className="flex flex-row gap-6 items-center">
+      <div className="flex flex-col md:flex-row gap-6 items-center">
         <h2 className="bg-neonGreen w-[15%] font-bold p-1 text-3xl rounded-lg">
           Services
         </h2>
-        <p className="w-[490px] text-base leading-4">
+        <p className="w-[490px] text-base leading-4 text-center">
           At our digital marketing agency, we offer a range of services to help
           businesses grow and succeed online. These services include:
         </p>
       </div>
-      <div className="grid grid-cols-2 mt-12 gap-10">
+      <div className="grid md:grid-cols-2 grid-cols-1 mt-12 gap-10 md-px-0 px-4">
         <div className="flex justify-between p-9 bg-slate-100 rounded-3xl border-black border-2 border-b-4">
           <div>
             <p className="bg-neonGreen text-center text-xl w-40 rounded-lg">
@@ -177,16 +177,16 @@ export default function Services() {
           alt="star"
           width={420}
           height={100}
-          className="-ml-10 lg:-ml-6"
+          className="-ml-10 lg:-ml-6 hidden  lg:block"
         />
       </div>
       {/* CASE STUDIES */}
       <div className="mt-28">
-        <div className="flex flex-row gap-6 items-center">
+        <div className="flex flex-col md:flex-row gap-6 items-center">
           <h2 className="bg-neonGreen font-bold p-1 text-xl rounded-lg">
             Case Studies
           </h2>
-          <p className="w-[490px] text-base leading-4">
+          <p className="w-[490px] text-base leading-4 text-center">
             Explore Real-Life Examples of Our Proven Digital Marketing Success
             through Our Case Studies
           </p>
